@@ -1,6 +1,10 @@
 import React from 'react'
 import '../assets/css/Login.css'
 
+import FacebookImg from '../assets/imgs/facebook-circle.png'
+import GoogleImg from '../assets/imgs/google.png'
+import AppleImg from '../assets/imgs/apple.png'
+
 export default function Login() {
     return (
         <div className="login-wrapper h-100">
@@ -12,7 +16,7 @@ export default function Login() {
                 </div>
                 <div className="group-item">
                     <div className="password-text">
-                        <label className="label-password">Email</label>
+                        <label className="label-password">Password</label>
                         <span>Lost your password?</span>
                     </div>
                     <input placeholder="Enter your password"/>
@@ -23,7 +27,11 @@ export default function Login() {
                 <span className="or-text">
                     <h6><span>or</span></h6>
                 </span>
-                <div className="group-social"></div>
+                <div className="group-social text-center w-100 mt-5">
+                    <img src={FacebookImg}/>
+                    <img src={GoogleImg}/>
+                    <img src={AppleImg}/>
+                </div>
                 <div className="login-bottom">
                     <span>New Customer?</span>
                     <button>create your account</button>

@@ -90,6 +90,11 @@
     font-size: 14px;
 }
 
+.group-social img{
+    margin: 0 8px;
+    cursor: pointer;
+}
+
 .login-wrapper .login-bottom{
     position: absolute;
     display: flex; 
