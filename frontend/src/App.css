@@ -1,0 +1,16 @@
+.App.active{
+    background-color: #e5e5e5;
+}
+
+.App{
+    position: relative;
+    overflow: hidden;
+}
+
+.body-content {
+    transition: all 0.3s;
+}
+
+.isHover {
+    background-color: #e5e5e5;
+}

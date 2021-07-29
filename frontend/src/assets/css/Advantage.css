@@ -1,0 +1,33 @@
+.advantage-wrapper{
+    height: 103px;
+    border-top: 1px solid #F8F8F8;
+}
+
+.advantage-item{
+    display: flex;
+    align-items: center;
+}
+
+.advantage-item img{
+    margin-right: 10px;
+}
+
+.advantage-item h6{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.advantage-item h6{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+}

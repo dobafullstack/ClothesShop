@@ -1,0 +1,128 @@
+.footer-top{
+    height: 56px;
+    background-color: #121212;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.footer-top .row{
+    align-items: center;
+}
+
+.footer-top .left{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-top .middle{
+    display: flex;
+}
+
+.footer-top .middle input{
+    margin-right: 10px;
+    flex-grow: 2;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 10px;
+    color: black;
+    background-color: #F8F8F8;
+    border: none;
+    outline: none;
+}
+
+.footer-top .middle button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 16px;
+}
+
+.footer-top .right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-top .right img{
+    margin: 0 10px;
+}
+
+.footer-body{
+    height: 237px;
+    padding: 25px 0;
+}
+
+.footer-body h4{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer-body ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-body ul li{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 34px;  
+}   
+
+.footer-body ul li img{
+    margin-right: 10px;
+}
+
+.footer-bottom{
+    height: 40px;
+    background-color: #F8F8F8
+}
+
+.footer-bottom .container{
+    height: 100%;
+}
+
+.footer-bottom .row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-bottom .left{
+    text-align: left;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.footer-bottom .middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .right{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 22px;
+    text-align: right;
+    text-decoration-line: underline;
+}

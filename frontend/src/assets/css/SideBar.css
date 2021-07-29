@@ -1,0 +1,42 @@
+.sidebar-wrapper {
+    width: 20%;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    color: white;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.sidebar-wrapper.active{
+    visibility: visible;
+    right: 0;
+}
+
+.sidebar-wrapper .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 16px;
+}
+
+.sidebar-wrapper .sidebar-header span {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.sidebar-wrapper .sidebar-header i{
+    cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar-body {
+    background-color: white !important;
+    height: 100%;
+    padding: 0 16px;
+}

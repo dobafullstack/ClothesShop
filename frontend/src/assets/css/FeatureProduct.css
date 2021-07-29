@@ -1,0 +1,82 @@
+.feature-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-top span.title {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.feature-top .feature-filter {
+    display: flex;
+}
+
+.feature-top .feature-filter .filter-item {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    margin: 0 8px;
+    text-transform: uppercase;
+    color: #121212;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.feature-top .feature-filter .filter-item:hover {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    cursor: pointer;
+}
+
+.feature-top .feature-filter .filter-item.active {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    cursor: pointer;
+}
+
+.feature-body {
+    margin: 20px 0;
+}
+
+.feature-bottom button {
+    width: 100%;
+    border: none;
+    border: 2px solid #f8f8f8;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.feature-bottom button:hover {
+    background-color: #ececec;
+}

@@ -1,0 +1,42 @@
+.topbar-wrapper{
+    background-color: #121212;
+    color: white;
+    max-height: 24px;
+}
+
+.topbar-wrapper .topbar-container{
+    justify-content: space-between;
+}
+
+.left-container{
+    justify-content: flex-start;
+}
+
+.left-container .left-item{
+    text-align: left;
+}
+
+.left-container .left-item img{
+    margin: 0 12px;
+}
+
+.left-container .left-item span{
+    font-family: Spartan;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.top-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 24px;
+}
+
+.right-container .right-item img{
+    margin: 0 12px;
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.nav-wrapper{
+    box-shadow: 1px 1px 4px #F8F8F8;
+}
+
+.nav-logo span{
+    font-family: Playfair Display;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content .nav-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-content .nav-item:hover img{
+    opacity: 1;
+}
+
+.nav-content .nav-item span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+}
+
+.nav-content .nav-item img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right img{
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.sub-wrapper{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s;
+    border-top: 2px solid #121212;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    padding: 16px 0;
+}
+
+.sub-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-wrapper .sub-item h4{
+    text-transform: uppercase;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.sub-wrapper .sub-item ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-wrapper .sub-item ul li{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.sub-wrapper .sub-item .carousel-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-wrapper .sub-item .carousel-header img{
+    cursor: pointer;
+}
+
+.sub-wrapper .sub-item .carousel-wrapper{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* transform: translateX(-300px); */
+}
+.sub-wrapper .sub-item .carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.sub-wrapper .sub-item .slider-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    transition: all 0.5s;
+}
+
+.sub-wrapper .sub-item .slider-item span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 5px 0;
+}
+
+
+.sub-wrapper .sub-item .slider-item strong{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+}

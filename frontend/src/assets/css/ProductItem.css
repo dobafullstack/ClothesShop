@@ -1,0 +1,135 @@
+.product-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item-wrapper:hover .div-hover {
+    visibility: visible;
+    bottom: -2%;
+}
+
+.product-item-wrapper:hover .product-pricing.hidden,
+.product-item-wrapper:hover .product-name.hidden {
+    visibility: hidden;
+}
+
+.product-item-wrapper img {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.product-item-wrapper span.product-name {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.product-item-wrapper span.product-name:hover {
+    opacity: 1;
+}
+
+.feature-body .product-item-wrapper .product-pricing {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-item-wrapper span.product-name.hidden,
+.product-item-wrapper .product-pricing.hidden {
+    transition: visibility 0.3s;
+}
+
+.product-item-wrapper .div-hover {
+    position: absolute;
+    background-color: white;
+    padding-top: 8px;
+    width: 100%;
+    bottom: -42%;
+    transition: all 0.4s;
+}
+
+.product-item-wrapper .div-hover .group-img,
+.product-item-wrapper .div-hover .group-size,
+.product-item-wrapper .div-hover .group-button {
+    display: flex;
+}
+
+.product-item-wrapper .div-hover .group-img img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.product-item-wrapper .div-hover .group-size .size-item {
+    width: 24px;
+    height: 24px;
+    background: #f8f8f8;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: center;
+    color: #121212;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.product-item-wrapper .div-hover .group-button {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item-wrapper .div-hover .group-button button {
+    height: 40px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.product-item-wrapper .div-hover .group-button button img {
+    margin: 0;
+    margin-left: 12px;
+}
+
+.product-item-wrapper .div-hover .group-button .btn-add-to-cart {
+    width: 145px;
+    background-color: black;
+    color: white;
+}
+
+.product-item-wrapper span {
+    margin-right: 10px;
+}
+
+.product-item-wrapper span.price {
+    margin-right: 10px;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.product-item-wrapper span.price-before-sale {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-decoration-line: line-through;
+    color: #121212;
+    opacity: 0.4;
+}
