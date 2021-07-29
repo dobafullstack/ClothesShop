@@ -1,0 +1,126 @@
+.login-wrapper{
+    color: #121212;
+    position: relative;
+}
+
+.login-wrapper .span-title{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.login-wrapper .group-item{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.login-wrapper .group-item input{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.4;
+    border: none;
+    background-color: #F8F8F8;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.login-wrapper .group-item label{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.login-wrapper .group-item .password-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-wrapper .group-item .password-text span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    opacity: 0.6;
+}
+
+.login-wrapper .group-item .btn-login{
+    padding: 12px 0;
+    border: none;
+    background-color: #121212;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.login-wrapper .or-text{
+    margin-top: 16px;
+}
+
+.login-wrapper .or-text h6{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #E5E5E5; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+.login-wrapper .or-text span{
+    background:#fff; 
+    padding:0 10px; 
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.login-wrapper .login-bottom{
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    bottom: 5%;
+}
+
+.login-wrapper .login-bottom span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.login-wrapper .login-bottom button{
+    width: 100%;
+    margin-top: 10px;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    padding: 10px 0;
+    border: none;
+    background-color: #F8F8F8;
+}

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "../assets/css/SideBar.css";
 import classNames from "classnames";
 import { AppContext } from "../contexts/AppProvider";
+import Login from './Login'
 
 export default function SideBar(props) {
     const {

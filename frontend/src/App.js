@@ -45,13 +45,13 @@ function App() {
 
     const getContentSidebar = () => {
         if (isVisibleSearch)
-            return Cart
+            return <Cart />
         if (isVisibleLanguage)
-            return Language
+            return <Language />
         if (isVisibleLogin)
-            return Login
+            return <Login />
         if (isVisibleCart)
-            return Search
+            return <Search />
     }
 
     return (
@@ -59,8 +59,10 @@ function App() {
             <TopBar />
             <Navbar />
             {/* <Advantage /> */}
-            <div style={{ minHeight: "69vh" }} className={bodyClassName}></div>
-            <Sidebar title={getTitleSidebar()} content={getContentSidebar()} />
+            <div style={{ minHeight: "69vh" }} className={bodyClassName}>
+                <FeatureProduct title="women's"/>
+            </div>
+            <Sidebar title={getTitleSidebar()} content={getContentSidebar()}/>
             <Footer />
         </div>
     );
