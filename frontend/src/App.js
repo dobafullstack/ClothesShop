@@ -45,13 +45,13 @@ function App() {
 
     const getContentSidebar = () => {
         if (isVisibleSearch)
-            return <Cart />
+            return <Search />
         if (isVisibleLanguage)
             return <Language />
         if (isVisibleLogin)
             return <Login />
         if (isVisibleCart)
-            return <Search />
+            return <Cart />;
     }
 
     return (

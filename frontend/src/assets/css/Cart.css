@@ -1,0 +1,159 @@
+.cart-wrapper {
+    color: #121212;
+    padding-top: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.cart-wrapper .item-wrapper .cart-item {
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 16px;
+}
+
+.cart-wrapper .item-wrapper .cart-item:not(:first-child) {
+    margin-top: 16px;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 16px;
+}
+
+.cart-wrapper .item-wrapper .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-wrapper .item-wrapper img {
+    cursor: pointer;
+}
+
+.cart-wrapper .item-wrapper .right-side .product-name {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.cart-wrapper .item-wrapper .right-side .product-name:hover {
+    opacity: 1;
+}
+
+.cart-wrapper .item-wrapper .right-side .product-size {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.cart-wrapper .item-wrapper .right-side .right-side-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-wrapper .item-wrapper .right-side .right-side-bottom .product-price {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.cart-wrapper .item-wrapper .right-side .right-side-bottom img {
+    cursor: pointer;
+}
+
+.cart-wrapper .item-wrapper .counter {
+    display: flex;
+    width: 82px;
+    height: 32px;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.cart-wrapper .item-wrapper .counter div {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.cart-wrapper .item-wrapper .counter .counter-value {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.cart-wrapper .item-wrapper .counter .minus,
+.cart-wrapper .item-wrapper .counter .plus {
+    opacity: 0.4;
+    color: #121212;
+    cursor: pointer;
+}
+
+.cart-wrapper .item-wrapper .counter .minus:hover,
+.cart-wrapper .item-wrapper .counter .plus:hover {
+    background-color: #cacaca;
+}
+
+.cart-wrapper .cart-bottom {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cart-wrapper .cart-bottom .total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-wrapper .cart-bottom .total-price span.total-text {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.cart-wrapper .cart-bottom .total-price span.total-price {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.cart-wrapper .cart-bottom button {
+    margin-top: 10px;
+    border: none;
+    height: 48px;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    opacity: 0.9;
+}
+
+.cart-wrapper .cart-bottom button.btn-checkout {
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.cart-wrapper .cart-bottom button.btn-view-cart {
+    color: #121212;
+    background-color: #F8F8F8;
+}
