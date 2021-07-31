@@ -8,7 +8,7 @@ import SupportImg from "../assets/imgs/support.png";
 
 export default function Advantage() {
     return (
-        <div style={{ boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.5)" }}>
+        <div style={{ borderBottom: "2px solid #F8F8F8" }}>
             <Container>
                 <Row className='advantage-wrapper'>
                     <Col xl={4} className='advantage-item'>

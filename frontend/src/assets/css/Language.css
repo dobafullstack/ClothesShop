@@ -1,0 +1,66 @@
+.language-wrapper{
+    padding: 10px 0;
+    color: #121212;
+}
+
+.language-wrapper span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.language-wrapper .list-item{
+    display: flex;
+    align-items: center;
+}
+
+.language-wrapper .list-item input{
+    display: none;
+}
+
+
+.language-wrapper .custom-radio{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #121212;
+    margin-right: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.language-wrapper .custom-radio::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.language-wrapper .list-item input:checked + .custom-radio::after{
+    transform: scale(1);
+    transform: translate(-50%, -50%);
+}
+
+.language-wrapper .list-item label{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 34px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.language-wrapper .list-item input:checked + label{
+    font-weight: 600;
+}

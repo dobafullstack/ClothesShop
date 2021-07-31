@@ -5,11 +5,16 @@ import Navbar from "./components/Navbar";
 import Advantage from "./components/Advantage";
 import Footer from "./components/Footer";
 import FeatureProduct from "./components/FeatureProduct";
+import Banner from './components/Banner'
+
+
 import Sidebar from "./components/SideBar";
 import Cart from "./components/Cart"
 import Language from "./components/Language"
 import Login from "./components/Login"
 import Search from "./components/Search"
+
+
 import { useContext } from "react";
 import { AppContext } from "./contexts/AppProvider";
 import classnames from "classnames";
@@ -60,7 +65,10 @@ function App() {
             <Navbar />
             {/* <Advantage /> */}
             <div style={{ minHeight: "69vh" }} className={bodyClassName}>
+                <Banner />
+                <Advantage />
                 <FeatureProduct title="women's"/>
+                <FeatureProduct title="men's"/>
             </div>
             <Sidebar title={getTitleSidebar()} content={getContentSidebar()}/>
             <Footer />

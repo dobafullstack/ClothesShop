@@ -1,0 +1,106 @@
+.search-wrapper{
+    padding-top: 10px;
+    color: #121212;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.search-wrapper .filter{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #E6E6E6;
+}
+
+.search-wrapper .filter .custom-select{
+    position: relative;
+}
+
+.search-wrapper .filter select, .search-wrapper .filter input{
+    height: 48px;
+    padding: 0 16px;
+    color: #121212;
+    background-color: #f8f8f8;
+    border: none;
+    outline: none;
+}
+
+.search-wrapper .custom-select, .search-wrapper .filter input{
+    margin-bottom: 24px;
+}
+
+.search-wrapper .filter select{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    appearance: none;
+}
+
+.search-wrapper .filter .custom-select i{
+    color: #121212;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.search-wrapper .filter input{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.4;
+}
+
+.search-wrapper .item-wrapper{
+    height: 80vh;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.search-wrapper .item-wrapper h6{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.search-wrapper .item-wrapper .item-search-wrapper{
+    overflow-Y: scroll;
+    overflow-x: hidden;
+    height: 77vh;
+}
+
+.search-wrapper .item-wrapper .item-search-wrapper .search-item{
+    margin-bottom: 24px;
+}
+
+.search-wrapper .item-wrapper .item-search-wrapper .search-item span.product-name{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #121212;
+    opacity: 0.6;
+    transition: all 0.3;
+    cursor: pointer;
+}
+
+.search-wrapper .item-wrapper .item-search-wrapper .search-item span.product-name:hover{
+    opacity: 1;
+}
+
+.search-wrapper .item-wrapper .item-search-wrapper .search-item span.product-price{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+}
