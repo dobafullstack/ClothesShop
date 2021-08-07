@@ -1,0 +1,47 @@
+.breadcrumb-wrapper {
+    background-color: #f8f8f8;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb-wrapper .container .breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-wrapper .container .breadcrumb a {
+    text-decoration: none;
+    color: #121212;
+}
+
+.breadcrumb-wrapper .container .breadcrumb a span {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: #121212;
+    opacity: 0.6;
+}
+
+.breadcrumb-wrapper .container .breadcrumb a i {
+    opacity: 0.6;
+}
+
+.breadcrumb-wrapper .container .breadcrumb span:last-child span {
+    opacity: 1;
+}
+
+.breadcrumb-wrapper .container .group-share {
+    opacity: 0.6;
+}
+
+.breadcrumb-wrapper .container .group-share i {
+    margin-right: 10px;
+}

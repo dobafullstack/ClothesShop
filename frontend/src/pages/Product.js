@@ -2,41 +2,22 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../assets/css/Product.css";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
-import { Link } from "react-router-dom";
 import Review from "../components/Review";
+import Rating from "react-rating-stars-component";
+import BreadcrumbBar from "../components/BreadcrumbBar";
 
 export default function Product() {
     const breadcrumbs = useBreadcrumbs();
 
     return (
         <div className='product-page-wrapper'>
-            <div className='header'>
-                <Container>
-                    <div className='breadcrumb'>
-                        {breadcrumbs.map(({ breadcrumb, match }, index) => (
-                            <span key={index}>
-                                <Link to={match.url} className='me-1'>
-                                    {breadcrumb}{" "}
-                                    {index === breadcrumbs.length - 1 ? (
-                                        ""
-                                    ) : (
-                                        <i class='fas fa-caret-right'></i>
-                                    )}
-                                </Link>
-                            </span>
-                        ))}
-                    </div>
-                    <div className='group-share'>
-                        <i class='fas fa-share-alt'></i>
-                        <span>Share</span>
-                    </div>
-                </Container>
-            </div>
+            <BreadcrumbBar />
             <div className='title-wrapper'>
                 <Container className='h-100'>
                     <Row className='h-100'>
                         <Col xl={4} className='left'>
-                            something
+                            <Rating value={5}/> 
+                            <span>2 Reviews</span>
                         </Col>
                         <Col xl={4} className='middle'>
                             {breadcrumbs[2].breadcrumb}

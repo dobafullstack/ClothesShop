@@ -1,0 +1,18 @@
+.category-wrapper .title-top{
+    background-color: #F8F8F8;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-wrapper .title-top span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}

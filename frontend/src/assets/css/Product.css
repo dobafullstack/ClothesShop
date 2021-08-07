@@ -2,54 +2,6 @@
     padding-bottom: 20px;
 }
 
-.product-page-wrapper .header {
-    background-color: #f8f8f8;
-    height: 32px;
-    display: flex;
-    align-items: center;
-}
-
-.product-page-wrapper .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.product-page-wrapper .header .container .breadcrumb {
-    margin-bottom: 0;
-}
-
-.product-page-wrapper .header .container .breadcrumb a {
-    text-decoration: none;
-    color: #121212;
-}
-
-.product-page-wrapper .header .container .breadcrumb a span {
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 18px;
-    color: #121212;
-    opacity: 0.6;
-}
-
-.product-page-wrapper .header .container .breadcrumb a i {
-    opacity: 0.6;
-}
-
-.product-page-wrapper .header .container .breadcrumb span:last-child span {
-    opacity: 1;
-}
-
-.product-page-wrapper .header .container .group-share {
-    opacity: 0.6;
-}
-
-.product-page-wrapper .header .container .group-share i {
-    margin-right: 10px;
-}
-
 .title-wrapper {
     height: 70px;
     background-color: #f8f8f8;
@@ -60,6 +12,20 @@
 .title-wrapper .left {
     display: flex;
     align-items: flex-end;
+}
+
+.title-wrapper .left .react-stars{
+    margin-right: 10px;
+}
+
+.title-wrapper .left span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: #121212;
+    opacity: 0.6;
 }
 
 .title-wrapper .middle {
@@ -175,6 +141,14 @@ hr {
 
 .product-wrapper .sub-img-wrapper img:not(:first-child){
     opacity: 0.6;
+}
+
+.product-wrapper .sub-img-wrapper img{
+    transition: opacity 0.3s;
+}
+
+.product-wrapper .sub-img-wrapper img:hover{
+    opacity: 1;
 }
 
 .product-wrapper .product-price {
