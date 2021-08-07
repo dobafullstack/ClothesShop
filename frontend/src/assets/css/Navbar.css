@@ -4,10 +4,12 @@
     box-shadow: 1px 1px 4px #F8F8F8;
 }
 
-.nav-logo span{
+.nav-logo span a{
     font-family: Playfair Display;
     font-size: 36px;
     line-height: 42px;
+    text-decoration: none;
+    color: #121212;
 }
 
 .nav-content{
@@ -72,13 +74,15 @@
     opacity: 1;
 }
 
-.sub-wrapper .sub-item h4{
+.sub-wrapper .sub-item h4 a{
     text-transform: uppercase;
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
+    text-decoration: none;
+    color: #121212
 }
 
 .sub-wrapper .sub-item ul{
@@ -87,13 +91,15 @@
     padding: 0;
 }
 
-.sub-wrapper .sub-item ul li{
+.sub-wrapper .sub-item ul li a{
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 34px;
     cursor: pointer;
+    text-decoration: none;
+    color: #121212;
 }
 
 .sub-wrapper .sub-item .carousel-header{

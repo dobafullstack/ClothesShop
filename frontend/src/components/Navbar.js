@@ -2,7 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { Container, Col, Row } from "reactstrap";
 import "../assets/css/Navbar.css";
 import classnames from "classnames";
-import {AppContext} from '../contexts/AppProvider'
+import { AppContext } from "../contexts/AppProvider";
+import { Link } from "react-router-dom";
 
 import SearchImg from "../assets/imgs/search.png";
 import EarthImg from "../assets/imgs/earth.png";
@@ -17,8 +18,8 @@ import Img3 from "../assets/imgs/img3.jpg";
 
 export default function Navbar() {
     const [isHover, setIsHover] = useState(false);
-    const [position, setPosition] = useState(0)
-    const [count, setCount] = useState(1)
+    const [position, setPosition] = useState(0);
+    const [count, setCount] = useState(1);
     const subWrapperClassName = classnames("sub-wrapper", { active: isHover });
     const layoutClassName = classnames("layout", { active: isHover });
     const {
@@ -27,7 +28,7 @@ export default function Navbar() {
         setIsVisibleLanguage,
         setIsVisibleLogin,
         setIsVisibleCart,
-        setIsVisibleSidebar
+        setIsVisibleSidebar,
     } = useContext(AppContext);
 
     useEffect(() => {
@@ -57,26 +58,27 @@ export default function Navbar() {
             });
         }
 
-        document.querySelector(".slider-item").style.marginLeft = `${position}%`;
+        document.querySelector(
+            ".slider-item"
+        ).style.marginLeft = `${position}%`;
     }, [position]);
 
     const handleLeftArrow = () => {
-        if (count === 1){
+        if (count === 1) {
             return;
         }
 
         setPosition(position + 37);
         setCount(count - 1);
-    }
+    };
 
     const handleRightArrow = () => {
-        if (count === 3){
+        if (count === 3) {
             return;
         }
-        setPosition(position - 37)
-        setCount(count + 1)
-    }
-
+        setPosition(position - 37);
+        setCount(count + 1);
+    };
 
     return (
         <div>
@@ -84,7 +86,9 @@ export default function Navbar() {
                 <Container style={{ maxHeight: "66px" }}>
                     <Row className='nav-container'>
                         <Col xl={3} className='nav-logo'>
-                            <span>Doba</span>
+                            <span>
+                                <Link to='/'>Doba</Link>
+                            </span>
                         </Col>
                         <Col xl={6} className='nav-content'>
                             <div className='nav-item'>
@@ -110,10 +114,22 @@ export default function Navbar() {
                             </div>
                         </Col>
                         <Col xl={3} className='nav-right'>
-                            <img src={SearchImg} onClick={() => setIsVisibleSearch(true)}/>
-                            <img src={EarthImg} onClick={() => setIsVisibleLanguage(true)}/>
-                            <img src={UserImg} onClick={() => setIsVisibleLogin(true)}/>
-                            <img src={CartImg} onClick={() => setIsVisibleCart(true)}/>
+                            <img
+                                src={SearchImg}
+                                onClick={() => setIsVisibleSearch(true)}
+                            />
+                            <img
+                                src={EarthImg}
+                                onClick={() => setIsVisibleLanguage(true)}
+                            />
+                            <img
+                                src={UserImg}
+                                onClick={() => setIsVisibleLogin(true)}
+                            />
+                            <img
+                                src={CartImg}
+                                onClick={() => setIsVisibleCart(true)}
+                            />
                         </Col>
                     </Row>
                 </Container>
@@ -122,39 +138,113 @@ export default function Navbar() {
                 <Container>
                     <Row>
                         <Col xl={2} className='sub-item'>
-                            <h4>Tops</h4>
+                            <h4>
+                                <Link to='/category/tops'>Tops</Link>
+                            </h4>
                             <ul>
-                                <li>Awesome</li>
-                                <li>Beachwear</li>
-                                <li>Beige</li>
-                                <li>Cool New</li>
-                                <li>Dress</li>
-                                <li>Gap</li>
-                                <li>Guess</li>
+                                <li>
+                                    <Link to='/category/tops/Awesome'>
+                                        Awesome
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Beachwear'>
+                                        Beachwear
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Beige'>Beige</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Cool New'>
+                                        Cool New
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Dress'>Dress</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Gap'>Gap</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/tops/Guess'>Guess</Link>
+                                </li>
                             </ul>
                         </Col>
                         <Col xl={2} className='sub-item'>
-                            <h4>Bottoms</h4>
+                            <h4>
+                                <Link to='/category/bottoms'>Bottoms</Link>
+                            </h4>
                             <ul>
-                                <li>Jeans</li>
-                                <li>Lacoste</li>
-                                <li>Levi's</li>
-                                <li>Model</li>
-                                <li>Nice Featured</li>
-                                <li>Polo</li>
-                                <li>Pullover</li>
+                                <li>
+                                    <Link to='/category/bottoms/Jeans'>
+                                        Jeans
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/bottoms/Lacoste'>
+                                        Lacoste
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/category/bottoms/Levi's">
+                                        Levi's
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/bottoms/Model'>
+                                        Model
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/bottoms/Nice Featured'>
+                                        Nice Featured
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/bottoms/Polo'>
+                                        Polo
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/bottoms/Pullover'>
+                                        Pullover
+                                    </Link>
+                                </li>
                             </ul>
                         </Col>
                         <Col xl={2} className='sub-item'>
-                            <h4>Accessories</h4>
+                            <h4>
+                                <Link to='/category/accessories'>
+                                    Accessories
+                                </Link>
+                            </h4>
                             <ul>
-                                <li>Scarf Sale 13%</li>
-                                <li>Shirt</li>
-                                <li>Shoes</li>
-                                <li>Shorts</li>
-                                <li>Summer</li>
-                                <li>Sunglasses</li>
-                                <li>Vintage</li>
+                                <li>
+                                    <Link to='/category/accessories/Sale'>
+                                        Scarf Sale 13%
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Shirt'>Shirt</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Shoes'>Shoes</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Shorts'>Shorts</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Summer'>Summer</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Sunglasses'>
+                                        Sunglasses
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/category/accessories/Vintage'>Vintage</Link>
+                                </li>
                             </ul>
                         </Col>
                         <Col xl={6} className='sub-item'>
@@ -163,15 +253,11 @@ export default function Navbar() {
                                 <div>
                                     <img
                                         src={LeftArrow}
-                                        onClick={() =>
-                                            handleLeftArrow()
-                                        }
+                                        onClick={() => handleLeftArrow()}
                                     />
                                     <img
                                         src={RightArrow}
-                                        onClick={() =>
-                                            handleRightArrow()
-                                        }
+                                        onClick={() => handleRightArrow()}
                                     />
                                 </div>
                             </div>

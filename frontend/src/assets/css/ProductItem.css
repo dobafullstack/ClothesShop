@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 
-.product-item-wrapper span.product-name {
+.product-item-wrapper span.product-name a{
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
@@ -30,6 +30,7 @@
     color: #121212;
     opacity: 0.6;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .product-item-wrapper span.product-name:hover {
@@ -132,4 +133,8 @@
     text-decoration-line: line-through;
     color: #121212;
     opacity: 0.4;
+}
+
+.react-stars span{
+    margin: 0;
 }

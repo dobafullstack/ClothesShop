@@ -2,12 +2,10 @@ import React from 'react'
 import {Container, Col, Row} from 'reactstrap'
 import ProductItem from './ProductItem'
 import '../assets/css/FeatureProduct.css'
-
-import Img1 from "../assets/imgs/img1.jpg";
-import Img2 from "../assets/imgs/img2.jpg";
-import Img3 from "../assets/imgs/img3.jpg";
+import format from '../configs/USDCurrency'
 
 export default function FeatureProduct(props) {
+
     return (
         <Container className='my-5'>
             <div className='feature-top'>
@@ -22,96 +20,19 @@ export default function FeatureProduct(props) {
             </div>
             <div className='feature-body'>
                 <Row>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img2}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img3}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img2}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img3}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img2}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img3}
-                            name="This is the product's name"
-                            price='$100'
-                            sale='$120'
-                        />
-                    </Col>
-                    <Col xl={3}>
-                        <ProductItem
-                            img={Img1}
-                            name="This is the product's name"
-                            price='$100'
-                        />
-                    </Col>
+                    {props.items.map((item, index) => (
+                        <Col xl={3} key={index}>
+                            <ProductItem
+                                img={
+                                    require(`../assets/imgs/products/${item.img}`)
+                                        .default
+                                }
+                                name={item.name}
+                                price={format(item.price)}
+                                sale={item.sale ? format(item.sale) : null}
+                            />
+                        </Col>
+                    ))}
                 </Row>
             </div>
             <div className='feature-bottom'>
