@@ -78,7 +78,7 @@ function App() {
                     title={getTitleSidebar()}
                     content={getContentSidebar()}
                 />
-                <Footer />
+                <Footer/>
             </div>
         </Router>
     );

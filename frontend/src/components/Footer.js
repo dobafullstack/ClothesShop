@@ -22,17 +22,14 @@ import AmericanImg from '../assets/imgs/american-express_x42.png'
 export default function Footer() {
     return (
         <div>
-            <div className='footer-top'>
+            <div className='footer-top' style={{marginTop: '5%'}}>
                 <Container>
                     <Row>
                         <Col xl={4} className='left'>
                             BE IN TOUCH WITH US:
                         </Col>
                         <Col xl={4} className='middle'>
-                            <input
-                                type='text'
-                                placeholder='Enter your email'
-                            />
+                            <input type='text' placeholder='Enter your email' />
                             <button>JOIN US</button>
                         </Col>
                         <Col xl={4} className='right'>

@@ -1,0 +1,145 @@
+.news-banner-wrapper .news-banner-item {
+    position: relative;
+}
+
+.news-banner-wrapper .news-banner-item .news-content {
+    height: 71px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.news-banner-wrapper .news-banner-item .news-content span:first-child {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    opacity: 0.6;
+}
+
+.news-banner-wrapper .news-banner-item .news-content span:last-child {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.news-banner-wrapper .news-banner-item .news-content strong {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #e91e63;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.subscribe-wrapper {
+    position: relative;
+}
+
+.subscribe-wrapper .subscribe-form {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 532px;
+    height: 461px;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.subscribe-wrapper .subscribe-form span {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.subscribe-wrapper .subscribe-form strong {
+    color: #e91e63;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.subscribe-wrapper .subscribe-form span:first-child {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    opacity: 0.4;
+}
+
+.subscribe-wrapper .subscribe-form input {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 22px 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 340px;
+    height: 64px;
+}
+
+.subscribe-wrapper .subscribe-form button {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 22px 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 340px;
+    height: 64px;
+}
+
+.subscribe-wrapper img:not(:first-child) {
+    position: absolute;
+    bottom: 0;
+}
+
+.subscribe-wrapper img.female {
+    left: 9%;
+    bottom: -6.5%;
+}
+
+.subscribe-wrapper img.male {
+    right: 14%;
+    bottom: 1%;
+}

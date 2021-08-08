@@ -8,6 +8,8 @@ import Search from "../components/Search";
 import Advantage from "../components/Advantage";
 import FeatureProduct from "../components/FeatureProduct";
 import Banner from "../components/Banner";
+import NewsBanner from "../components/NewsBanner";
+import Blog from "../components/Blog";
 
 import { femaleItems, maleItems } from "../static-product";
 
@@ -20,6 +22,8 @@ export default function Home() {
             <Advantage />
             <FeatureProduct title="women's" items={femaleItems} />
             <FeatureProduct title="men's" items={maleItems} />
+            <NewsBanner />
+            <Blog />
         </div>
     );
 }

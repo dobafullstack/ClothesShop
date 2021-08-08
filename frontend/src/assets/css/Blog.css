@@ -1,0 +1,62 @@
+.blog-wrapper .blog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-wrapper .blog-header span:first-child {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.blog-wrapper .blog-header span:last-child {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #121212;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.blog-wrapper .blog-content .blog-item {
+    position: relative;
+}
+
+.blog-wrapper .blog-content .blog-item .blog-description {
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+    padding: 16px;
+}
+
+.blog-wrapper .blog-content .blog-item .blog-description .blog-title {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.blog-wrapper .blog-content .blog-item .blog-description .blog-content {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #121212;
+    opacity: 0.8;
+}
