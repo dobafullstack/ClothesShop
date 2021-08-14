@@ -1,22 +1,27 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const detailCategorySchema = mongoose.Schema({
     category_id: {
         type: String,
-        ref: 'Category',
+        ref: "Category",
         require: true,
     },
     name: {
-        type: String, 
+        type: String,
         require: true,
-        unique: true
+        unique: true,
     },
-    gender: {
-        type: String, 
-        default: 'male'
-    }
+    part_id: {
+        type: String,
+        default: "male",
+        ref: "Part",
+    },
 });
 
-const CategoryDetail = new mongoose.model('CategoryDetail', detailCategorySchema, 'category_detail');
+const CategoryDetail = new mongoose.model(
+    "CategoryDetail",
+    detailCategorySchema,
+    "category_detail"
+);
 
 module.exports = CategoryDetail;

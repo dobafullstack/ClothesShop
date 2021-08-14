@@ -40,13 +40,13 @@ export default function Product() {
                             <Row>
                                 <Col xl={2}>
                                     <div className='arrow-wrapper mb-3 d-flex justify-content-between'>
-                                        <img
+                                        <img alt="icon"
                                             src={
                                                 require("../assets/imgs/down-arrow.png")
                                                     .default
                                             }
                                         />
-                                        <img
+                                        <img alt="icon"
                                             src={
                                                 require("../assets/imgs/up-arrow2.png")
                                                     .default
@@ -54,28 +54,28 @@ export default function Product() {
                                         />
                                     </div>
                                     <div className='sub-img-wrapper'>
-                                        <img
+                                        <img alt="icon"
                                             className='img-fluid mb-3'
                                             src={
                                                 require("../assets/imgs/products/male1.jpg")
                                                     .default
                                             }
                                         />
-                                        <img
+                                        <img alt="icon"
                                             className='img-fluid mb-3 not-first'
                                             src={
                                                 require("../assets/imgs/products/male2.jpg")
                                                     .default
                                             }
                                         />
-                                        <img
+                                        <img alt="icon"
                                             className='img-fluid mb-3 not-first'
                                             src={
                                                 require("../assets/imgs/products/male3.jpg")
                                                     .default
                                             }
                                         />
-                                        <img
+                                        <img alt="icon"
                                             className='img-fluid not-first'
                                             src={
                                                 require("../assets/imgs/products/male4.jpg")
@@ -85,21 +85,21 @@ export default function Product() {
                                     </div>
                                 </Col>
                                 <Col xl={9} className='img-wrapper-right'>
-                                    <img
+                                    <img alt="icon"
                                         className='img-fluid h-100'
                                         src={
                                             require("../assets/imgs/products/male1.jpg")
                                                 .default
                                         }
                                     />
-                                    <img
+                                    <img alt="icon"
                                         className='left-arrow'
                                         src={
                                             require("../assets/imgs/left-arrow.png")
                                                 .default
                                         }
                                     />
-                                    <img
+                                    <img alt="icon"
                                         className='right-arrow'
                                         src={
                                             require("../assets/imgs/right-arrow.png")
@@ -116,7 +116,7 @@ export default function Product() {
                             </div>
                             <div className='sub-img-right'>
                                 <div className='sub-item'>
-                                    <img
+                                    <img alt="icon"
                                         className='img-fluid'
                                         src={
                                             require("../assets/imgs/products/male1.jpg")
@@ -125,7 +125,7 @@ export default function Product() {
                                     />
                                 </div>
                                 <div className='sub-item'>
-                                    <img
+                                    <img alt="icon"
                                         className='img-fluid'
                                         src={
                                             require("../assets/imgs/products/male2.jpg")
@@ -134,7 +134,7 @@ export default function Product() {
                                     />
                                 </div>
                                 <div className='sub-item'>
-                                    <img
+                                    <img alt="icon"
                                         className='img-fluid'
                                         src={
                                             require("../assets/imgs/products/male3.jpg")
@@ -143,7 +143,7 @@ export default function Product() {
                                     />
                                 </div>
                                 <div className='sub-item'>
-                                    <img
+                                    <img alt="icon"
                                         className='img-fluid'
                                         src={
                                             require("../assets/imgs/products/male4.jpg")
@@ -158,7 +158,7 @@ export default function Product() {
                                 <strong>S</strong>
                             </div>
                             <div className='size-guide'>
-                                <img
+                                <img alt="icon"
                                     src={
                                         require("../assets/imgs/hook.png")
                                             .default
@@ -175,7 +175,7 @@ export default function Product() {
                                     </button>
                                     <div className='group-right'>
                                         <button className='btn-add-to-wishlist'>
-                                            <img
+                                            <img alt="icon"
                                                 src={
                                                     require("../assets/imgs/heart.png")
                                                         .default
@@ -183,7 +183,7 @@ export default function Product() {
                                             />
                                         </button>
                                         <button className='btn-add-to-compare'>
-                                            <img
+                                            <img alt="icon"
                                                 src={
                                                     require("../assets/imgs/scale.png")
                                                         .default
@@ -196,7 +196,7 @@ export default function Product() {
                             <hr />
                             <div className='service'>
                                 <div className='service-item'>
-                                    <img
+                                    <img alt="icon"
                                         src={
                                             require("../assets/imgs/truck2.png")
                                                 .default
@@ -205,7 +205,7 @@ export default function Product() {
                                     <span>Shipping & Delivery</span>
                                 </div>
                                 <div className='service-item'>
-                                    <img
+                                    <img alt="icon"
                                         src={
                                             require("../assets/imgs/refresh2.png")
                                                 .default
@@ -214,7 +214,7 @@ export default function Product() {
                                     <span>Returns & Exchanges</span>
                                 </div>
                                 <div className='service-item'>
-                                    <img
+                                    <img alt="icon"
                                         src={
                                             require("../assets/imgs/email2.png")
                                                 .default
@@ -234,49 +234,49 @@ export default function Product() {
                                 </Row>
                             </div>
                             <div className='group-delivery mt-3'>
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/stripe.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/aes.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/paypal.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/visa.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/mastercard.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/discover.png")
                                             .default
                                     }
                                 />
-                                <img
+                                <img alt="icon"
                                     className='img-fluid'
                                     src={
                                         require("../assets/imgs/american-express.png")

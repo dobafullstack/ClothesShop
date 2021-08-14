@@ -15,6 +15,7 @@ export default function Filter() {
             <div className='filter-header d-flex justify-content-between align-items-center'>
                 <div>
                     <img
+                        alt='icon'
                         src={require("../assets/imgs/filter.png").default}
                         className='me-2'
                         onClick={() => setIsVisibleFilter(!isVisibleFilter)}
@@ -25,16 +26,19 @@ export default function Filter() {
                 </div>
                 <div className='d-flex'>
                     <img
+                        alt='icon'
                         className='me-4'
                         src={require("../assets/imgs/list-item.png").default}
                     />
                     <img
+                        alt='icon'
                         src={require("../assets/imgs/group-item.png").default}
                     />
                 </div>
                 <div>
                     <span className='best-seller me-1'>Bestseller</span>
                     <img
+                        alt='icon'
                         src={require("../assets/imgs/down-arrow.png").default}
                     />
                 </div>

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
-.nav-wrapper{
-    box-shadow: 1px 1px 4px #F8F8F8;
+.nav-wrapper {
+    box-shadow: 1px 1px 4px #f8f8f8;
 }
 
-.nav-logo span a{
+.nav-logo span a {
     font-family: Playfair Display;
     font-size: 36px;
     line-height: 42px;
@@ -12,31 +12,32 @@
     color: #121212;
 }
 
-.nav-content{
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-content .nav-item{
+.nav-content .nav-item {
     position: relative;
     cursor: pointer;
 }
 
-.nav-content .nav-item:hover img{
+.nav-content .nav-item:hover img {
     opacity: 1;
 }
 
-.nav-content .nav-item span{
+.nav-content .nav-item a {
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #121212;
+    text-decoration: none;
 }
 
-.nav-content .nav-item img{
+.nav-content .nav-item img {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -45,18 +46,18 @@
     transition: opacity 0.4s;
 }
 
-.nav-right{
+.nav-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.nav-right img{
+.nav-right img {
     margin: 0 12px;
     cursor: pointer;
 }
 
-.sub-wrapper{
+.sub-wrapper {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.4s, opacity 0.4s;
@@ -69,12 +70,12 @@
     padding: 16px 0;
 }
 
-.sub-wrapper.active{
+.sub-wrapper.active {
     visibility: visible;
     opacity: 1;
 }
 
-.sub-wrapper .sub-item h4 a{
+.sub-wrapper .sub-item h4 a {
     text-transform: uppercase;
     font-family: Spartan;
     font-style: normal;
@@ -82,16 +83,16 @@
     font-size: 14px;
     line-height: 22px;
     text-decoration: none;
-    color: #121212
+    color: #121212;
 }
 
-.sub-wrapper .sub-item ul{
+.sub-wrapper .sub-item ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.sub-wrapper .sub-item ul li a{
+.sub-wrapper .sub-item ul li a {
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
@@ -102,16 +103,16 @@
     color: #121212;
 }
 
-.sub-wrapper .sub-item .carousel-header{
+.sub-wrapper .sub-item .carousel-header {
     display: flex;
     justify-content: space-between;
 }
 
-.sub-wrapper .sub-item .carousel-header img{
+.sub-wrapper .sub-item .carousel-header img {
     cursor: pointer;
 }
 
-.sub-wrapper .sub-item .carousel-wrapper{
+.sub-wrapper .sub-item .carousel-wrapper {
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -120,17 +121,17 @@
     /* transform: translateX(-300px); */
 }
 .sub-wrapper .sub-item .carousel-wrapper::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-.sub-wrapper .sub-item .slider-item{
+.sub-wrapper .sub-item .slider-item {
     display: flex;
     flex-direction: column;
     margin-right: 80px;
     transition: all 0.5s;
 }
 
-.sub-wrapper .sub-item .slider-item span{
+.sub-wrapper .sub-item .slider-item span {
     font-family: Spartan;
     font-style: normal;
     font-weight: 500;
@@ -139,8 +140,7 @@
     margin: 5px 0;
 }
 
-
-.sub-wrapper .sub-item .slider-item strong{
+.sub-wrapper .sub-item .slider-item strong {
     font-family: Spartan;
     font-style: normal;
     font-weight: bold;

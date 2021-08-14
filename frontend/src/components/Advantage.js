@@ -12,14 +12,14 @@ export default function Advantage() {
             <Container>
                 <Row className='advantage-wrapper'>
                     <Col xl={4} className='advantage-item'>
-                        <img src={TruckImg} />
+                        <img alt="icon" src={TruckImg} />
                         <div className='text-wrapper'>
                             <h6>Free Shipping</h6>
                             <span>On all UA order or order above $100</span>
                         </div>
                     </Col>
                     <Col xl={4} className='advantage-item'>
-                        <img src={RefreshImg} />
+                        <img alt="icon" src={RefreshImg} />
                         <div className='text-wrapper'>
                             <h6>30 DAYS RETURN</h6>
                             <span>
@@ -28,7 +28,7 @@ export default function Advantage() {
                         </div>
                     </Col>
                     <Col xl={4} className='advantage-item'>
-                        <img src={SupportImg} />
+                        <img alt="icon" src={SupportImg} />
                         <div className='text-wrapper'>
                             <h6>SUPPORT 24/7</h6>
                             <span>

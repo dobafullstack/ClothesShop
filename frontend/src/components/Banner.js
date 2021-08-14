@@ -9,6 +9,7 @@ export default function Banner() {
                 <Col xl={6}>
                     <div className='banner-left position-relative'>
                         <img
+                            alt='icon'
                             src={
                                 require("../assets/imgs/banner-left.jpg")
                                     .default
@@ -16,12 +17,14 @@ export default function Banner() {
                             className='img-fluid w-100'
                         />
                         <img
+                            alt='icon'
                             src={
                                 require("../assets/imgs/left-arrow.png").default
                             }
                             className='arrow left'
                         />
                         <img
+                            alt='icon'
                             src={
                                 require("../assets/imgs/right-arrow.png")
                                     .default
@@ -42,6 +45,7 @@ export default function Banner() {
                             xl={6}
                             className='position-relative banner-right-wrapper'>
                             <img
+                                alt='icon'
                                 src={
                                     require("../assets/imgs/banner-right1.jpg")
                                         .default
@@ -56,6 +60,7 @@ export default function Banner() {
                             xl={6}
                             className='position-relative banner-right-wrapper'>
                             <img
+                                alt='icon'
                                 src={
                                     require("../assets/imgs/banner-right2.jpg")
                                         .default
@@ -75,6 +80,7 @@ export default function Banner() {
                             xl={12}
                             className='position-relative banner-right-wrapper'>
                             <img
+                                alt='icon'
                                 src={
                                     require("../assets/imgs/banner-right3.jpg")
                                         .default

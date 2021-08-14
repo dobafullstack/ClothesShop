@@ -20,7 +20,7 @@ export default function TopBar() {
                         lg={6}
                         md={6}
                         sm={6}
-                        sm={6}
+                        xm={6}
                         className='top-left'>
                         <Row className='left-container'>
                             <Col
@@ -28,9 +28,9 @@ export default function TopBar() {
                                 lg={4}
                                 md={4}
                                 sm={4}
-                                sm={4}
+                                xm={4}
                                 className='left-item'>
-                                <img src={PhoneImg} />
+                                <img src={PhoneImg} alt="icon"/>
                                 <span>+84 944609933</span>
                             </Col>
                             <Col
@@ -38,9 +38,9 @@ export default function TopBar() {
                                 lg={4}
                                 md={4}
                                 sm={4}
-                                sm={4}
+                                xm={4}
                                 className='left-item'>
-                                <img src={LocationImg} />
+                                <img src={LocationImg} alt="icon"/>
                                 <span>Ho Chi Minh, Viet Nam</span>
                             </Col>
                             <Col
@@ -48,9 +48,9 @@ export default function TopBar() {
                                 lg={4}
                                 md={4}
                                 sm={4}
-                                sm={4}
+                                xm={4}
                                 className='left-item'>
-                                <img src={ClockImg} />
+                                <img src={ClockImg} alt="icon"/>
                                 <span>All week 24/7</span>
                             </Col>
                         </Row>
@@ -60,14 +60,14 @@ export default function TopBar() {
                         lg={6}
                         md={6}
                         sm={6}
-                        sm={6}
+                        xm={6}
                         className='top-right'>
                         <Row className='right-container'>
                             <Col xl={12} className='right-item'>
-                                <img src={FacebookImg} />
-                                <img src={TwitterImg} />
-                                <img src={PinterestImg} />
-                                <img src={InstagramImg} />
+                                <img src={FacebookImg} alt="icon"/>
+                                <img src={TwitterImg} alt="icon"/>
+                                <img src={PinterestImg} alt="icon"/>
+                                <img src={InstagramImg} alt="icon"/>
                             </Col>
                         </Row>
                     </Col>

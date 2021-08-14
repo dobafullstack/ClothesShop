@@ -33,10 +33,10 @@ export default function Footer() {
                             <button>JOIN US</button>
                         </Col>
                         <Col xl={4} className='right'>
-                            <img src={FacebookImg} />
-                            <img src={TwitterImg} />
-                            <img src={PinterestImg} />
-                            <img src={InstagramImg} />
+                            <img alt="icon" src={FacebookImg} />
+                            <img alt="icon" src={TwitterImg} />
+                            <img alt="icon" src={PinterestImg} />
+                            <img alt="icon" src={InstagramImg} />
                         </Col>
                     </Row>
                 </Container>
@@ -75,19 +75,19 @@ export default function Footer() {
                             <h4>Categories</h4>
                             <ul>
                                 <li>
-                                    <img src={LocationImg} />
+                                    <img alt="icon" src={LocationImg} />
                                     <span>Ho Chi Minh, Viet Nam</span>
                                 </li>
                                 <li>
-                                    <img src={PhoneImg} />
+                                    <img alt="icon" src={PhoneImg} />
                                     <span>+84 944609933</span>
                                 </li>
                                 <li>
-                                    <img src={ClockImg} />
+                                    <img alt="icon" src={ClockImg} />
                                     <span>All week 24/7</span>
                                 </li>
                                 <li>
-                                    <img src={EmailImg} />
+                                    <img alt="icon" src={EmailImg} />
                                     <span>dobadov3@gmail.com</span>
                                 </li>
                             </ul>
@@ -102,13 +102,13 @@ export default function Footer() {
                             Copyright © 2021 all rights reserved
                         </Col>
                         <Col xl={4} className='middle'>
-                            <img src={StripeImg} />
-                            <img src={AESImg} />
-                            <img src={PaypalImg} />
-                            <img src={VisaImg} />
-                            <img src={MasterCardImg} />
-                            <img src={DiscoverImg} />
-                            <img src={AmericanImg} />
+                            <img alt="icon" src={StripeImg} />
+                            <img alt="icon" src={AESImg} />
+                            <img alt="icon" src={PaypalImg} />
+                            <img alt="icon" src={VisaImg} />
+                            <img alt="icon" src={MasterCardImg} />
+                            <img alt="icon" src={DiscoverImg} />
+                            <img alt="icon" src={AmericanImg} />
                         </Col>
                         <Col xl={4} className='right'>
                             Designed by <strong>Oleh Chabanov</strong>

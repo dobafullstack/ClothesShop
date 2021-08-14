@@ -1,7 +1,4 @@
 import React from "react";
-import Img1 from "../assets/imgs/img1.jpg";
-import Img2 from "../assets/imgs/img2.jpg";
-import Img3 from "../assets/imgs/img3.jpg";
 import Scale from "../assets/imgs/scale.png";
 import Heart from "../assets/imgs/heart.png";
 import Rating from "react-rating-stars-component";
@@ -10,29 +7,54 @@ import { Link } from "react-router-dom";
 
 import "../assets/css/ProductItem.css";
 
+import format from "../configs/USDCurrency";
+
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/actions/cart.action";
+
 export default function ProductItem(props) {
+    const dispatch = useDispatch();
+
+    const handleAddToCart = (item) => {
+        dispatch(addToCart(item));
+    };
+
     return (
         <div className='product-item-wrapper'>
-            <img src={props.img} className='img-fluid' />
+            <Link to={"/product/" + props.item.name}>
+                <img
+                    alt='icon'
+                    src={props.item.images[0]}
+                    className='img-fluid w-100'
+                />
+            </Link>
             <div className='div-hover my-3'>
                 <span className='product-name'>
-                    <Link to={"/product/" + props.name}>{props.name} </Link>
+                    <Link to={"/product/" + props.item.name}>
+                        {props.item.name}{" "}
+                    </Link>
                 </span>
 
-                <div className="d-flex justify-content-between">
+                <div className='d-flex justify-content-between'>
                     <div className='product-pricing mb-3'>
-                        <span className='price'>{props.price}</span>
-                        {props.sale ? (
-                            <span className='price-before-sale'>$120</span>
+                        <span className='price'>
+                            {format(props.item.price)}
+                        </span>
+                        {props.item.sale ? (
+                            <span className='price-before-sale'>
+                                {format(props.item.sale)}
+                            </span>
                         ) : null}
                     </div>
-                    <div><Rating value={5}/></div>
+                    <div>
+                        <Rating value={5} />
+                    </div>
                 </div>
                 <div className='group-img'>
-                    <img src={Img1} />
-                    <img src={Img2} />
-                    <img src={Img3} />
-                    <img src={Img1} />
+                    <img alt='icon' src={props.item.images[0]} />
+                    <img alt='icon' src={props.item.images[1]} />
+                    <img alt='icon' src={props.item.images[2]} />
+                    <img alt='icon' src={props.item.images[3]} />
                 </div>
                 <div className='group-size my-2'>
                     <div className='size-item'>XS</div>
@@ -41,13 +63,17 @@ export default function ProductItem(props) {
                     <div className='size-item'>L</div>
                 </div>
                 <div className='group-button'>
-                    <button className='btn-add-to-cart'>Add to Cart</button>
+                    <button
+                        className='btn-add-to-cart'
+                        onClick={() => handleAddToCart(props.item)}>
+                        Add to Cart
+                    </button>
                     <div className='group-right'>
                         <button className='btn-add-to-wishlist'>
-                            <img src={Heart} />
+                            <img alt='icon' src={Heart} />
                         </button>
                         <button className='btn-add-to-compare'>
-                            <img src={Scale} />
+                            <img alt='icon' src={Scale} />
                         </button>
                     </div>
                 </div>

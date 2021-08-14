@@ -17,12 +17,12 @@ const productSchema = mongoose.Schema({
     size: {
         type: Array,
         default: [
-            {name: 'XS', count: 0},
-            {name: 'S', count: 0},
-            {name: 'M', count: 0},
-            {name: 'L', count: 0},
-            {name: 'XL', count: 0},
-            {name: 'XXL', count: 0},
+            {name: 'XS', count: 10},
+            {name: 'S', count: 10},
+            {name: 'M', count: 10},
+            {name: 'L', count: 10},
+            {name: 'XL', count: 10},
+            {name: 'XXL', count: 10},
         ]
     },
     price: {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import '../assets/css/Blog.css'
+import "../assets/css/Blog.css";
 
 export default function Blog() {
     return (
@@ -13,6 +13,7 @@ export default function Blog() {
                 <Row>
                     <Col xl={4} className='blog-item'>
                         <img
+                            alt='icon'
                             className='img-fluid w-100'
                             src={require("../assets/imgs/blog1.jpg").default}
                         />
@@ -30,6 +31,7 @@ export default function Blog() {
                     </Col>
                     <Col xl={4} className='blog-item'>
                         <img
+                            alt='icon'
                             className='img-fluid w-100'
                             src={require("../assets/imgs/blog2.jpg").default}
                         />
@@ -45,6 +47,7 @@ export default function Blog() {
                     </Col>
                     <Col xl={4} className='blog-item'>
                         <img
+                            alt='icon'
                             className='img-fluid w-100'
                             src={require("../assets/imgs/blog3.jpg").default}
                         />

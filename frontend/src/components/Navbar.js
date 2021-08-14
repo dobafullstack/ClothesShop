@@ -21,14 +21,12 @@ export default function Navbar() {
     const [position, setPosition] = useState(0);
     const [count, setCount] = useState(1);
     const subWrapperClassName = classnames("sub-wrapper", { active: isHover });
-    const layoutClassName = classnames("layout", { active: isHover });
     const {
         setIsAppHover,
         setIsVisibleSearch,
         setIsVisibleLanguage,
         setIsVisibleLogin,
         setIsVisibleCart,
-        setIsVisibleSidebar,
     } = useContext(AppContext);
 
     useEffect(() => {
@@ -61,7 +59,7 @@ export default function Navbar() {
         document.querySelector(
             ".slider-item"
         ).style.marginLeft = `${position}%`;
-    }, [position]);
+    }, [position, setIsAppHover]);
 
     const handleLeftArrow = () => {
         if (count === 1) {
@@ -92,41 +90,52 @@ export default function Navbar() {
                         </Col>
                         <Col xl={6} className='nav-content'>
                             <div className='nav-item'>
-                                <span>About us</span> <img src={UpArrow} />
+                                <Link to="/category/About us">About us</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Women</span> <img src={UpArrow} />
+                                <Link to="/category/Women">Women</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Men</span> <img src={UpArrow} />
+                                <Link to="/category/Men">Men</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Beauty</span> <img src={UpArrow} />
+                                <Link to="/category/Beauty">Beauty</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Accessories</span> <img src={UpArrow} />
+                                <Link to="/category/Accessories">Accessories</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Blog</span> <img src={UpArrow} />
+                                <Link to="/blog">Blog</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                             <div className='nav-item'>
-                                <span>Contact</span> <img src={UpArrow} />
+                                <Link to="/contact">Contact</Link>{" "}
+                                <img alt='icon' src={UpArrow} />
                             </div>
                         </Col>
                         <Col xl={3} className='nav-right'>
                             <img
+                                alt='icon'
                                 src={SearchImg}
                                 onClick={() => setIsVisibleSearch(true)}
                             />
                             <img
+                                alt='icon'
                                 src={EarthImg}
                                 onClick={() => setIsVisibleLanguage(true)}
                             />
                             <img
+                                alt='icon'
                                 src={UserImg}
                                 onClick={() => setIsVisibleLogin(true)}
                             />
                             <img
+                                alt='icon'
                                 src={CartImg}
                                 onClick={() => setIsVisibleCart(true)}
                             />
@@ -226,16 +235,24 @@ export default function Navbar() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/category/accessories/Shirt'>Shirt</Link>
+                                    <Link to='/category/accessories/Shirt'>
+                                        Shirt
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to='/category/accessories/Shoes'>Shoes</Link>
+                                    <Link to='/category/accessories/Shoes'>
+                                        Shoes
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to='/category/accessories/Shorts'>Shorts</Link>
+                                    <Link to='/category/accessories/Shorts'>
+                                        Shorts
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to='/category/accessories/Summer'>Summer</Link>
+                                    <Link to='/category/accessories/Summer'>
+                                        Summer
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link to='/category/accessories/Sunglasses'>
@@ -243,7 +260,9 @@ export default function Navbar() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/category/accessories/Vintage'>Vintage</Link>
+                                    <Link to='/category/accessories/Vintage'>
+                                        Vintage
+                                    </Link>
                                 </li>
                             </ul>
                         </Col>
@@ -252,10 +271,12 @@ export default function Navbar() {
                                 <h4>Best Seller</h4>
                                 <div>
                                     <img
+                                        alt='icon'
                                         src={LeftArrow}
                                         onClick={() => handleLeftArrow()}
                                     />
                                     <img
+                                        alt='icon'
                                         src={RightArrow}
                                         onClick={() => handleRightArrow()}
                                     />
@@ -263,32 +284,32 @@ export default function Navbar() {
                             </div>
                             <div className='carousel-wrapper'>
                                 <div className='slider-item'>
-                                    <img src={Img1} />
+                                    <img alt='icon' src={Img1} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>
                                 <div className='slider-item'>
-                                    <img src={Img2} />
+                                    <img alt='icon' src={Img2} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>
                                 <div className='slider-item'>
-                                    <img src={Img3} />
+                                    <img alt='icon' src={Img3} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>
                                 <div className='slider-item'>
-                                    <img src={Img1} />
+                                    <img alt='icon' src={Img1} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>
                                 <div className='slider-item'>
-                                    <img src={Img2} />
+                                    <img alt='icon' src={Img2} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>
                                 <div className='slider-item'>
-                                    <img src={Img3} />
+                                    <img alt='icon' src={Img3} />
                                     <span>Test</span>
                                     <strong>$ 100</strong>
                                 </div>

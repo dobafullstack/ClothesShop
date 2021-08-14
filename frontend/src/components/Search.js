@@ -26,7 +26,7 @@ export default function Search() {
                 <div className='item-search-wrapper'>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -37,7 +37,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -48,7 +48,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -59,7 +59,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -70,7 +70,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -81,7 +81,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -92,7 +92,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -103,7 +103,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -114,7 +114,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -125,7 +125,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -136,7 +136,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img1} className='img-fluid' />
+                            <img alt="icon" src={Img1} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>
@@ -147,7 +147,7 @@ export default function Search() {
                     </Row>
                     <Row className='search-item'>
                         <Col xl={3}>
-                            <img src={Img2} className='img-fluid' />
+                            <img alt="icon" src={Img2} className='img-fluid' />
                         </Col>
                         <Col xl={9} className='d-flex flex-column'>
                             <span className='product-name'>

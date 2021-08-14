@@ -1,6 +1,5 @@
-import React from 'react'
+import React from "react";
 import Rating from "react-rating-stars-component";
-
 
 export default function Review() {
     return (
@@ -15,6 +14,7 @@ export default function Review() {
                 </div>
                 <div>
                     <img
+                        alt='icon'
                         className='me-2'
                         src={require("../assets/imgs/message.png").default}
                     />

@@ -8,6 +8,7 @@ export default function AppProvider({ children }) {
     const [isVisibleLanguage, setIsVisibleLanguage] = useState(false);
     const [isVisibleLogin, setIsVisibleLogin] = useState(false);
     const [isVisibleCart, setIsVisibleCart] = useState(false);
+    const [isLogin, setIsLogin] = useState(false);
 
     return (
         <AppContext.Provider
@@ -22,6 +23,8 @@ export default function AppProvider({ children }) {
                 setIsVisibleLogin,
                 isVisibleCart,
                 setIsVisibleCart,
+                isLogin,
+                setIsLogin,
             }}>
             {children}
         </AppContext.Provider>

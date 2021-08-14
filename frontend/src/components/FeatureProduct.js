@@ -23,13 +23,7 @@ export default function FeatureProduct(props) {
                     {props.items.map((item, index) => (
                         <Col xl={3} key={index}>
                             <ProductItem
-                                img={
-                                    require(`../assets/imgs/products/${item.img}`)
-                                        .default
-                                }
-                                name={item.name}
-                                price={format(item.price)}
-                                sale={item.sale ? format(item.sale) : null}
+                                item={item}
                             />
                         </Col>
                     ))}

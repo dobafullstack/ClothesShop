@@ -8,6 +8,7 @@ export default function NewsBanner() {
             <Row>
                 <Col xl={6} className='news-banner-item'>
                     <img
+                        alt='icon'
                         className='img-fluid w-100'
                         src={require("../assets/imgs/home-banner1.png").default}
                     />
@@ -19,6 +20,7 @@ export default function NewsBanner() {
                 </Col>
                 <Col xl={6} className='news-banner-item'>
                     <img
+                        alt='icon'
                         className='img-fluid w-100'
                         src={require("../assets/imgs/home-banner2.png").default}
                     />
@@ -33,6 +35,7 @@ export default function NewsBanner() {
             </Row>
             <div className='my-5 w-100 subscribe-wrapper'>
                 <img
+                    alt='icon'
                     className='img-fluid w-100'
                     src={require("../assets/imgs/home-banner3.png").default}
                 />
@@ -51,10 +54,18 @@ export default function NewsBanner() {
                         className='mt-4'
                     />
                     <br />
-                    <button className="mt-4">Subscribe</button>
+                    <button className='mt-4'>Subscribe</button>
                 </div>
-                <img className="img-fluid female" src={require('../assets/imgs/female-banner.png').default}/>
-                <img className="img-fluid male" src={require('../assets/imgs/male-banner.png').default}/>
+                <img
+                    alt='icon'
+                    className='img-fluid female'
+                    src={require("../assets/imgs/female-banner.png").default}
+                />
+                <img
+                    alt='icon'
+                    className='img-fluid male'
+                    src={require("../assets/imgs/male-banner.png").default}
+                />
             </div>
         </Container>
     );
