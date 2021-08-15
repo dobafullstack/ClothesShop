@@ -81,7 +81,7 @@
     margin-bottom: 24px;
 }
 
-.search-wrapper .item-wrapper .item-search-wrapper .search-item span.product-name{
+.search-wrapper .item-wrapper .item-search-wrapper .search-item a.product-name{
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
@@ -91,6 +91,7 @@
     opacity: 0.6;
     transition: all 0.3;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .search-wrapper .item-wrapper .item-search-wrapper .search-item span.product-name:hover{
@@ -103,4 +104,16 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 22px;
+}
+
+.text-none span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    opacity: 0.6;
 }

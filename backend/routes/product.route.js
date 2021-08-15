@@ -4,6 +4,8 @@ const controller = require('../controllers/product.controller')
 
 router.get('/', controller.getAllProducts);
 router.get('/:productID', controller.getProductById);
+router.get('/search/:productName', controller.getProductByName)
+router.get('/detail/:productName', controller.getDetailProduct)
 router.get("/category/:categoryName", controller.getProductByCategoryId);
 router.get('/category-detail/:categoryDetailName', controller.getProductByCategoryDetailId);
 router.get('/delete/:productID', controller.deleteProduct);

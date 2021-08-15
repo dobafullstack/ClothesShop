@@ -1,51 +1,65 @@
-import * as actionTypes from '../constants/product.constant'
+import * as actionTypes from "../constants/product.constant";
 
 const initialState = {
     products: [],
     isLoading: false,
+    isSearching: false,
     womenProduct: [],
-    menProduct: []
+    menProduct: [],
+    searchProduct: [],
+    detail_product: {
+        images: [],
+        price: 0
+    },
 };
 
 export const productReducer = (state = initialState, action) => {
-    switch(action.type){
+    switch (action.type) {
         case actionTypes.GET_PRODUCT_REQUIRED:
             return {
                 ...state,
                 isLoading: true,
-                products: []
-            }
+                products: [],
+            };
         case actionTypes.GET_PRODUCT_BY_CATEGORY_NAME:
-            return{
+            return {
                 ...state,
                 isLoading: false,
-                products: [
-                    ...action.payload.products
-                ]
-            }
+                products: [...action.payload.products],
+            };
         case actionTypes.GET_PRODUCT_BY_CATEGORY_DETAIL_NAME:
-            return{
+            return {
                 ...state,
                 isLoading: false,
-                products: [
-                    ...action.payload.products
-                ]
-            }
-        case actionTypes.GET_WOMEN_PRODUCT: 
-            return{
+                products: [...action.payload.products],
+            };
+        case actionTypes.GET_WOMEN_PRODUCT:
+            return {
                 ...state,
-                womenProduct: [
-                    ...action.payload.products
-                ]
-            }
-        case actionTypes.GET_MEN_PRODUCT: 
-            return{
+                womenProduct: [...action.payload.products],
+            };
+        case actionTypes.GET_MEN_PRODUCT:
+            return {
                 ...state,
-                menProduct: [
-                    ...action.payload.products
-                ]
-            }
+                menProduct: [...action.payload.products],
+            };
+        case actionTypes.SEARCH_REQUIRED:
+            return {
+                ...state,
+                isSearching: true,
+            };
+        case actionTypes.GET_PRODUCT_BY_NAME:
+            return {
+                ...state,
+                searchProduct: [...action.payload.products],
+                isSearching: false,
+            };
+        case actionTypes.GET_DETAIL_PRODUCT:
+            return {
+                ...state,
+                detail_product: { ...action.payload.product },
+            };
         default:
-            return state
+            return state;
     }
-}
+};

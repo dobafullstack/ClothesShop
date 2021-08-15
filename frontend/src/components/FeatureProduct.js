@@ -1,11 +1,11 @@
-import React from 'react'
-import {Container, Col, Row} from 'reactstrap'
-import ProductItem from './ProductItem'
-import '../assets/css/FeatureProduct.css'
-import format from '../configs/USDCurrency'
+import React from "react";
+import { Container, Col, Row } from "reactstrap";
+import ProductItem from "./ProductItem";
+import "../assets/css/FeatureProduct.css";
+import format from "../configs/USDCurrency";
+import ReactLoading from "react-loading";
 
 export default function FeatureProduct(props) {
-
     return (
         <Container className='my-5'>
             <div className='feature-top'>
@@ -22,9 +22,7 @@ export default function FeatureProduct(props) {
                 <Row>
                     {props.items.map((item, index) => (
                         <Col xl={3} key={index}>
-                            <ProductItem
-                                item={item}
-                            />
+                            <ProductItem item={item} />
                         </Col>
                     ))}
                 </Row>

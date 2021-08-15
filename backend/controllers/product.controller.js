@@ -68,6 +68,33 @@ module.exports.getProductByCategoryDetailId = async (req, res) => {
     }
 };
 
+module.exports.getProductByName = async (req, res) => {
+    const { productName } = req.params;
+
+    try {
+        const products = await Product.find({
+            name: { $regex: productName, $options: "i" },
+        });
+
+        res.status(200).json(products);
+    } catch (err) {
+        console.log(err);
+        res.status(403).json(err);
+    }
+};
+
+module.exports.getDetailProduct = async (req, res) => {
+    const { productName } = req.params;
+
+    try {
+        const product = await Product.findOne({ name: productName });
+
+        res.status(200).json(product);
+    } catch (err) {
+        res.status(403).json(err);
+    }
+};
+
 module.exports.addProduct = async (req, res) => {
     try {
         const product = await Product.create(req.body);

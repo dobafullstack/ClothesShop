@@ -9,7 +9,7 @@ export default function Review() {
             </div>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex align-items-center'>
-                    <Rating value={5}></Rating>
+                    <Rating value={5} edit={false}></Rating>
                     <span className='count-review ms-2'>2 reviews</span>
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export default function Review() {
                             <span className='count_time me-2'>
                                 3 months ago
                             </span>
-                            <Rating value={5} />
+                            <Rating value={5} edit={false}/>
                         </div>
                     </div>
                     <span className='review_content'>
@@ -44,7 +44,7 @@ export default function Review() {
                             <span className='count_time me-2'>
                                 3 months ago
                             </span>
-                            <Rating value={5} />
+                            <Rating value={5} edit={false}/>
                         </div>
                     </div>
                     <span className='review_content'>

@@ -5,7 +5,7 @@ const jwt_decode = require("jwt-decode");
 
 module.exports.login = async (req, res) => {
     const { username, password } = req.body;
-    console.log("LOGIN")
+    // console.log("LOGIN")
 
     const customer = await Customer.findOne({ username });
 
